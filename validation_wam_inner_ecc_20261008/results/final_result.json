@@ -1,0 +1,121 @@
+{
+  "phase2": {
+    "cases": 30,
+    "packets": 120,
+    "detected_and_spatially_matched": 120,
+    "raw_exact_packets": 115,
+    "raw_exact_rate": 0.9583333333333334,
+    "raw_ber_among_matched": 0.0018229166666666667,
+    "raw_ber_count_missing_as_32_errors": 0.0018229166666666667,
+    "useful_exact_packets": 120,
+    "useful_exact_rate": 1.0,
+    "all_four_useful_exact_images": 30,
+    "all_four_useful_exact_rate": 1.0,
+    "silent_wrong_decodes": 0,
+    "silent_wrong_rate": 0.0,
+    "codec_status_and_correction_distribution": {
+      "0": 115,
+      "1": 4,
+      "3": 1
+    },
+    "mean_detected_clusters": 4.0,
+    "mean_union_iou": 0.9449422503666186,
+    "prior_mean_psnr": 44.08383420582539,
+    "new_mean_psnr": 44.09248890875194,
+    "psnr_change_db": 0.008654702926548907,
+    "prior_mean_ssim": 0.9884136557579041,
+    "new_mean_ssim": 0.988412344455719,
+    "ssim_change": -1.3113021850585938e-06,
+    "mean_embed_seconds": 0.614912368102038,
+    "mean_detect_seconds": 0.9552726181980689,
+    "mean_ecc_encode_seconds": 3.524870068455736e-05,
+    "mean_ecc_decode_seconds": 1.809176562043528e-05,
+    "gate": {
+      "protected_packet_recovery_ge_98pct": true,
+      "all_four_images_ge_90pct": true,
+      "silent_wrong_le_1pct": true,
+      "psnr_drop_le_0p5_db": true,
+      "ssim_drop_le_0p005": true,
+      "pass": true
+    }
+  },
+  "phase3": {
+    "by_area": [
+      {
+        "retained_target": 0.75,
+        "crops": 90,
+        "regions": 360,
+        "crops_with_at_least_one_cluster": 90,
+        "crops_with_at_least_one_cluster_rate": 1.0,
+        "mean_detected_clusters": 3.811111111111111,
+        "mean_localized_regions": 3.8,
+        "mean_exact_useful_packets": 3.433333333333333,
+        "overall_exact_useful_packets": 309,
+        "largely_surviving_regions": 179,
+        "largely_surviving_localized": 179,
+        "largely_surviving_exact": 173,
+        "largely_surviving_exact_rate": 0.9664804469273743,
+        "silent_wrong_decodes": 3,
+        "failed_packets": 51,
+        "failed_fully_removed": 6,
+        "failed_less_than_25pct_remaining": 30,
+        "failed_less_than_75pct_remaining": 45,
+        "failed_largely_surviving": 6,
+        "bch_status": {
+          "valid": 312,
+          "missing": 18,
+          "uncorrectable_syndrome": 29,
+          "parity_reject": 1
+        },
+        "mean_detection_seconds": 0.9941537361246042,
+        "mean_ecc_decode_seconds": 1.9328703314790296e-05
+      },
+      {
+        "retained_target": 0.5,
+        "crops": 90,
+        "regions": 360,
+        "crops_with_at_least_one_cluster": 90,
+        "crops_with_at_least_one_cluster_rate": 1.0,
+        "mean_detected_clusters": 3.0,
+        "mean_localized_regions": 2.9555555555555557,
+        "mean_exact_useful_packets": 2.388888888888889,
+        "overall_exact_useful_packets": 215,
+        "largely_surviving_regions": 46,
+        "largely_surviving_localized": 46,
+        "largely_surviving_exact": 46,
+        "largely_surviving_exact_rate": 1.0,
+        "silent_wrong_decodes": 5,
+        "failed_packets": 145,
+        "failed_fully_removed": 68,
+        "failed_less_than_25pct_remaining": 124,
+        "failed_less_than_75pct_remaining": 145,
+        "failed_largely_surviving": 0,
+        "bch_status": {
+          "valid": 220,
+          "uncorrectable_syndrome": 37,
+          "parity_reject": 9,
+          "missing": 94
+        },
+        "mean_detection_seconds": 0.8884438004344701,
+        "mean_ecc_decode_seconds": 2.0003668032586576e-05
+      }
+    ],
+    "gate": {
+      "large_region_exact_ge_75pct_each_level": true,
+      "at_least_one_cluster_ge_80pct_each_level": true,
+      "silent_wrong_le_1pct": false,
+      "majority_failed_packets_below_75pct_survival": true,
+      "pass": false
+    },
+    "physical_erasure_definition": "less than 75% of original region survives; full removal is separately reported",
+    "total_failed_packets": 196,
+    "failed_packets_below_75pct_survival": 190
+  },
+  "phase4": "NOT RUN",
+  "phase5": "NOT RUN",
+  "last_completed_phase": "Phase 3 blind arbitrary-offset crop",
+  "decision": "MODIFY",
+  "stop_reason": "Phase 3 blind-crop gate failed",
+  "elapsed_seconds": 49.213326930999756,
+  "phase3_elapsed_seconds": 191.785573720932
+}

@@ -1,0 +1,95 @@
+{
+  "clean": {
+    "cases": 30,
+    "region_cases": 120,
+    "raw_exact": 118,
+    "bch_exact": 120,
+    "valid_exact": 120,
+    "erased": 0,
+    "silent_wrong": 0,
+    "mean_psnr": 44.08391553225777,
+    "mean_ssim": 0.9883990705013275,
+    "previous_protected_mean_psnr": 44.09248890875194,
+    "previous_protected_mean_ssim": 0.988412344455719,
+    "psnr_change_db": -0.008573376494169338,
+    "ssim_change": -1.3273954391546106e-05,
+    "mean_embed_seconds": 0.7514008972308753,
+    "mean_detect_seconds": 1.0677674889360786,
+    "mean_codec_encode_seconds": 3.968339879065752e-05,
+    "mean_packet_decode_seconds": 1.8698799734314284e-05
+  },
+  "crop": {
+    "cases": 180,
+    "region_cases": 720,
+    "raw_exact": 370,
+    "bch_exact": 510,
+    "valid_exact": 510,
+    "erased": 210,
+    "silent_wrong": 0,
+    "silent_wrong_rate": 0.0,
+    "unmatched_accepted_clusters": 0,
+    "large_surviving": 225,
+    "large_valid_exact": 216,
+    "large_valid_exact_rate": 0.96,
+    "failed_packets": 210,
+    "erasure_share_of_failures": 1.0,
+    "by_area": [
+      {
+        "retained_target": 0.75,
+        "crops": 90,
+        "region_cases": 360,
+        "raw_exact": 238,
+        "bch_exact": 306,
+        "valid_exact": 306,
+        "erased": 54,
+        "silent_wrong": 0,
+        "large_surviving": 179,
+        "large_valid_exact": 171,
+        "large_valid_exact_rate": 0.9553072625698324,
+        "mean_clusters": 3.8333333333333335,
+        "mean_detect_seconds": 1.0281017384016498
+      },
+      {
+        "retained_target": 0.5,
+        "crops": 90,
+        "region_cases": 360,
+        "raw_exact": 132,
+        "bch_exact": 204,
+        "valid_exact": 204,
+        "erased": 156,
+        "silent_wrong": 0,
+        "large_surviving": 46,
+        "large_valid_exact": 45,
+        "large_valid_exact_rate": 0.9782608695652174,
+        "mean_clusters": 2.922222222222222,
+        "mean_detect_seconds": 0.9339621051214635
+      }
+    ],
+    "classification_counts": {
+      "VALID": 510,
+      "ERASURE": 210
+    },
+    "crc_status_counts": {
+      "accepted": 510,
+      "missing": 119,
+      "bch_uncorrectable_syndrome": 74,
+      "crc_reject": 5,
+      "bch_parity_reject": 12
+    },
+    "bch_status_counts": {
+      "valid": 515,
+      "missing": 119,
+      "uncorrectable_syndrome": 74,
+      "parity_reject": 12
+    }
+  },
+  "gate": {
+    "silent_wrong_le_0p5pct": true,
+    "large_region_recovery_ge_95pct": true,
+    "erasure_share_of_failures_ge_95pct": true,
+    "psnr_drop_le_0p5db": true,
+    "ssim_drop_le_0p005": true,
+    "no_accepted_unmatched_clusters": true,
+    "pass": true
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-07",
+  "decision": "NO-GO",
+  "last_completed_phase": "clean four-region WAM",
+  "stop_reason": "Clean four-region all-exact image rate was 0.733333, below the frozen 0.80 gate",
+  "official_wam_commit": "2c08af04d037d5667c02f6ddebbda9ff04581c3e",
+  "checkpoint_sha256": "90ef232384e023bd63245eb0c131abd69d2afc7b8f17a71ccedceb542bf009e2",
+  "environment": {
+    "python": "3.10.14",
+    "torch": "2.5.1",
+    "torchvision": "0.20.1",
+    "device": "cpu"
+  },
+  "clean_two_region": {
+    "cases": 30,
+    "exact_packets": 57,
+    "total_packets": 60,
+    "exact_packet_recall": 0.95,
+    "all_exact_image_rate": 0.90
+  },
+  "clean_four_region": {
+    "cases": 30,
+    "exact_packets": 112,
+    "total_packets": 120,
+    "exact_packet_recall": 0.9333333333333333,
+    "all_exact_image_rate": 0.7333333333333333
+  },
+  "not_run": [
+    "eight-region clean",
+    "unknown-offset crop",
+    "WAM MDS versus repetition versus RLNC",
+    "JPEG/noise diagnostic",
+    "rotation diagnostic",
+    "confidence-threshold comparison"
+  ]
+}

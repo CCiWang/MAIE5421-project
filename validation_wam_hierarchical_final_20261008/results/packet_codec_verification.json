@@ -1,0 +1,42 @@
+{
+  "crc_definition": "MSB first, poly x^5+x^2+1 (0x25), init 0, augment 5 zero bits, xorout 0, no reflection",
+  "all_2048_zero_error_inputs": true,
+  "exhaustive_zero_packet_bit_error_patterns": {
+    "0": {
+      "exact": 1
+    },
+    "1": {
+      "exact": 32
+    },
+    "2": {
+      "exact": 496
+    },
+    "3": {
+      "exact": 4960
+    },
+    "4": {
+      "erasure": 35960,
+      "bch_parity_reject": 9920,
+      "bch_uncorrectable_syndrome": 26040
+    },
+    "5": {
+      "erasure": 199920,
+      "bch_uncorrectable_syndrome": 166656,
+      "bch_silent_wrong_before_crc": 34720,
+      "crc_rejected_bch_silent_wrong": 33264,
+      "crc_reject": 33264,
+      "silent_wrong": 1456
+    },
+    "6": {
+      "erasure": 905464,
+      "bch_uncorrectable_syndrome": 784672,
+      "bch_parity_reject": 104160,
+      "bch_silent_wrong_before_crc": 17360,
+      "crc_rejected_bch_silent_wrong": 16632,
+      "crc_reject": 16632,
+      "silent_wrong": 728
+    }
+  },
+  "random_nonzero_input_trials": 7000,
+  "elapsed_seconds": 1.4726325829979032
+}

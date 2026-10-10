@@ -1,0 +1,11 @@
+image,detected_clusters,crc_valid_clusters,unique_valid_ids,global_output,detect_seconds
+astronaut,0,0,0,False,0.19171037498745136
+coffee,0,0,0,False,0.16093079198617488
+chelsea,0,0,0,False,0.15935783300665207
+rocket,0,0,0,False,0.1519151249958668
+hubble,0,0,0,False,0.17598908400395885
+immunohistochemistry,0,0,0,False,0.16653195797698572
+retina,0,0,0,False,0.14921683399006724
+motorcycle,0,0,0,False,0.15433054100139998
+camera,0,0,0,False,0.1372539589938242
+coins,0,0,0,False,0.1536729999934323

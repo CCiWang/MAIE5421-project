@@ -1,0 +1,69 @@
+# Operating-system and editor files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+*.so
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+**/.venv/
+**/conda-py310/
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Downloaded upstream source and model assets
+validation_wam_20261007/watermark-anything/
+third_party/watermark-anything/
+**/checkpoints/
+*.pth
+*.pt
+*.ckpt
+*.safetensors
+
+# Runtime caches, logs, and scratch output
+**/.mplconfig/
+**/logs/
+*.log
+*.jsonl
+tmp/
+.cache/
+output/
+
+# Early synthetic-pilot generated fixtures and raw outputs
+/data/
+/results/
+
+# Machine-specific provenance snapshots
+**/results/environment.json
+**/official_results/environment.json
+**/results/image_manifest*.json
+**/official_results/image_manifest*.json
+**/results/reused_images.json
+**/results/artifact_manifest.json
+**/RUNBOOK.md
+validation_wam_20261007/environment_probe.json
+**/environment-*.txt
+**/environment.*.txt
+
+# Regenerable packet-level intermediates from earlier sprints
+validation_wam_inner_ecc_20261008/results/*_packets.csv
+validation_wam_hierarchical_final_20261008/results/*_packets.csv
+
+# Generated PDF duplicates; Markdown reports and final PNG figures are retained
+**/results/*.pdf

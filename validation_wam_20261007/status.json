@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-07",
+  "decision": "MODIFY",
+  "decision_scope": "Execution environment only; technical method decision remains unvalidated.",
+  "last_phase": "0",
+  "inference_executed": false,
+  "python": "3.12.14",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "device_tested": "CPU (tensor smoke test only)",
+  "wam": {
+    "repository": "https://github.com/facebookresearch/watermark-anything",
+    "commit": "2c08af04d037d5667c02f6ddebbda9ff04581c3e",
+    "source_installed": false,
+    "official_metadata_retrieved": true
+  },
+  "checkpoint": {
+    "filename": "wam_mit.pth",
+    "url": "https://dl.fbaipublicfiles.com/watermark_anything/wam_mit.pth",
+    "downloaded": false,
+    "sha256": null,
+    "loaded": false
+  },
+  "dependency_install_status": "incomplete; pip could not resolve lazy-loader>=0.4 in this attempt",
+  "torch_verification": {
+    "torch": "2.5.1",
+    "torchvision": "0.20.1",
+    "device_tested": "cpu",
+    "mps_available_in_process": false,
+    "cpu_check": [
+      2.0,
+      2.0
+    ],
+    "seconds": 1.1039588451385498
+  },
+  "previous_pilot_files_verified_unchanged": 35,
+  "blockers": [
+    "curl DNS timeouts for PyPI, GitHub, official checkpoint host and Hugging Face; pip downloads nevertheless succeeded",
+    "Official dependency install could not resolve lazy-loader>=0.4",
+    "Automatic approval review failed with HTTP 403 while submitting Python source/checkpoint downloader; action not executed"
+  ],
+  "phase_results": {
+    "1": "NOT RUN",
+    "2": "NOT RUN",
+    "3": "NOT RUN",
+    "4": "NOT RUN",
+    "5": "NOT RUN",
+    "6": "NOT RUN"
+  }
+}

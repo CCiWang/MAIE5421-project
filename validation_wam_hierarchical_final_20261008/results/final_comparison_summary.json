@@ -1,0 +1,132 @@
+{
+  "paired_crops": 180,
+  "by_method_and_area": [
+    {
+      "method": "repetition",
+      "retained_target": 0.75,
+      "crops": 90,
+      "exact_global": 85,
+      "exact_global_rate": 0.9444444444444444,
+      "wrong_global_outputs": 0,
+      "mean_valid_ids": 7.0,
+      "mean_erased_ids": 1.0,
+      "exact_valid_packets": 629,
+      "erased_region_packets": 90,
+      "silent_wrong_region_packets": 1,
+      "unmatched_accepted_clusters": 0,
+      "conflicting_ids": 0,
+      "raw_ber_among_matched": 0.031659985422740525,
+      "mean_clusters": 7.877777777777778,
+      "mean_psnr": 41.000462069157514,
+      "mean_ssim": 0.9798658927281697,
+      "mean_embed_seconds": 1.2446142749618352,
+      "mean_crop_detect_seconds": 2.592644786588304,
+      "mean_outer_decode_seconds": 1.5954111262948978e-05
+    },
+    {
+      "method": "repetition",
+      "retained_target": 0.5,
+      "crops": 90,
+      "exact_global": 76,
+      "exact_global_rate": 0.8444444444444444,
+      "wrong_global_outputs": 0,
+      "mean_valid_ids": 5.866666666666666,
+      "mean_erased_ids": 2.1333333333333333,
+      "exact_valid_packets": 528,
+      "erased_region_packets": 192,
+      "silent_wrong_region_packets": 0,
+      "unmatched_accepted_clusters": 0,
+      "conflicting_ids": 0,
+      "raw_ber_among_matched": 0.04567307692307692,
+      "mean_clusters": 7.0,
+      "mean_psnr": 41.000462069157514,
+      "mean_ssim": 0.9798658927281697,
+      "mean_embed_seconds": 1.2446142749618352,
+      "mean_crop_detect_seconds": 3.550762934780667,
+      "mean_outer_decode_seconds": 2.910465409513563e-05
+    },
+    {
+      "method": "mds",
+      "retained_target": 0.75,
+      "crops": 90,
+      "exact_global": 81,
+      "exact_global_rate": 0.9,
+      "wrong_global_outputs": 0,
+      "mean_valid_ids": 6.888888888888889,
+      "mean_erased_ids": 1.1111111111111112,
+      "exact_valid_packets": 620,
+      "erased_region_packets": 100,
+      "silent_wrong_region_packets": 0,
+      "unmatched_accepted_clusters": 1,
+      "conflicting_ids": 0,
+      "raw_ber_among_matched": 0.026965350223546944,
+      "mean_clusters": 7.611111111111111,
+      "mean_psnr": 40.99291395200103,
+      "mean_ssim": 0.9798961261908213,
+      "mean_embed_seconds": 1.2514967041972946,
+      "mean_crop_detect_seconds": 2.6010907527214537,
+      "mean_outer_decode_seconds": 0.0002750070028317471
+    },
+    {
+      "method": "mds",
+      "retained_target": 0.5,
+      "crops": 90,
+      "exact_global": 81,
+      "exact_global_rate": 0.9,
+      "wrong_global_outputs": 0,
+      "mean_valid_ids": 5.888888888888889,
+      "mean_erased_ids": 2.111111111111111,
+      "exact_valid_packets": 530,
+      "erased_region_packets": 190,
+      "silent_wrong_region_packets": 0,
+      "unmatched_accepted_clusters": 0,
+      "conflicting_ids": 0,
+      "raw_ber_among_matched": 0.039216694078947366,
+      "mean_clusters": 6.822222222222222,
+      "mean_psnr": 40.99291395200103,
+      "mean_ssim": 0.9798961261908213,
+      "mean_embed_seconds": 1.2514967041972946,
+      "mean_crop_detect_seconds": 3.63559922687677,
+      "mean_outer_decode_seconds": 0.00032106067681322907
+    }
+  ],
+  "paired_differences_by_area": {
+    "0.75": -0.044444444444444446,
+    "0.5": 0.05555555555555555
+  },
+  "combined_paired_difference": 0.005555555555555556,
+  "psnr_mds_minus_repetition_db": -0.007548117156481737,
+  "ssim_mds_minus_repetition": 3.023346265162985e-05,
+  "silent_wrong_rates": {
+    "repetition": 0.0006944444444444445,
+    "mds": 0.0
+  },
+  "clean_global_by_method": {
+    "repetition": {
+      "cases": 30,
+      "exact_global": 29,
+      "wrong_global_outputs": 0
+    },
+    "mds": {
+      "cases": 30,
+      "exact_global": 30,
+      "wrong_global_outputs": 0
+    }
+  },
+  "gate": {
+    "combined_gain_ge_10pp": false,
+    "nonnegative_gain_each_area": false,
+    "psnr_difference_le_0p5db": true,
+    "ssim_difference_le_0p005": true,
+    "pass": false,
+    "silent_or_unmatched_accepted_le_0p5pct_each_method": true
+  },
+  "unmatched_accepted_rates": {
+    "repetition": 0.0,
+    "mds": 0.0006944444444444445
+  },
+  "conservative_accepted_error_or_unmatched_rates": {
+    "repetition": 0.0006944444444444445,
+    "mds": 0.0006944444444444445
+  }
+}

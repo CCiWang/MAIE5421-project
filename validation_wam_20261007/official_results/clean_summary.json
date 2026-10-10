@@ -1,0 +1,32 @@
+[
+  {
+    "region_count": 2,
+    "cases": 30,
+    "exact_packet_recall": 0.95,
+    "all_exact_image_rate": 0.9,
+    "at_least_four_exact_rate": 0.0,
+    "mean_bit_accuracy": 0.9973958333333334,
+    "mean_clusters": 2.0,
+    "mean_false_clusters": 0.1,
+    "mean_psnr": 47.14745784356255,
+    "mean_ssim": 0.9937387426694234,
+    "mean_union_iou": 0.9496914584346526,
+    "mean_embed_seconds": 0.3401901458312447,
+    "mean_detect_seconds": 0.5579573471981955
+  },
+  {
+    "region_count": 4,
+    "cases": 30,
+    "exact_packet_recall": 0.9333333333333333,
+    "all_exact_image_rate": 0.7333333333333333,
+    "at_least_four_exact_rate": 0.7333333333333333,
+    "mean_bit_accuracy": 0.9958333333333333,
+    "mean_clusters": 4.0,
+    "mean_false_clusters": 0.26666666666666666,
+    "mean_psnr": 44.08383420582539,
+    "mean_ssim": 0.9884136557579041,
+    "mean_union_iou": 0.9442908467184404,
+    "mean_embed_seconds": 0.6789570374336714,
+    "mean_detect_seconds": 0.9931696014362388
+  }
+]

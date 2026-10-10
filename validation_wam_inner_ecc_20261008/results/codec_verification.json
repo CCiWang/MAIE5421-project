@@ -1,0 +1,44 @@
+{
+  "generator_hex": "0x8faf",
+  "generator_degree": 15,
+  "cosets": [
+    [
+      1,
+      2,
+      4,
+      8,
+      16
+    ],
+    [
+      3,
+      6,
+      12,
+      24,
+      17
+    ],
+    [
+      5,
+      10,
+      20,
+      9,
+      18
+    ]
+  ],
+  "minimum_distance_bch_31": 7,
+  "minimum_distance_extended_32": 8,
+  "all_65536_messages_zero_error_roundtrip": true,
+  "exhaustive_error_patterns_on_zero_codeword": {
+    "1": 32,
+    "2": 496,
+    "3": 4960,
+    "4": 35960
+  },
+  "random_trials_0_to_6_errors": 7000,
+  "beyond_radius_5_and_6_bit_behavior": {
+    "5_silent_miscorrection": 1767,
+    "5_detected_failure": 8233,
+    "6_detected_failure": 9788,
+    "6_silent_miscorrection": 212
+  },
+  "elapsed_seconds": 0.5980770000023767
+}

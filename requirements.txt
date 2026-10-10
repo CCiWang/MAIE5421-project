@@ -1,0 +1,16 @@
+# Verified direct dependencies for Python 3.10.14.
+torch==2.5.1
+torchvision==0.20.1
+numpy==1.26.4
+Pillow==10.4.0
+scipy==1.14.1
+matplotlib==3.9.2
+omegaconf==2.3.0
+antlr4-python3-runtime==4.9.3
+einops==0.8.0
+pycocotools==2.0.8
+timm==1.0.11
+opencv-python==4.10.0.84
+lpips==0.1.4
+scikit-image==0.24.0
+scikit-learn==1.5.2

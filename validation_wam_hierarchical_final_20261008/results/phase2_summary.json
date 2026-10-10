@@ -1,0 +1,51 @@
+{
+  "cases": 30,
+  "region_cases": 240,
+  "distribution_valid_exact_0_to_8": {
+    "0": 0,
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 1,
+    "5": 1,
+    "6": 1,
+    "7": 0,
+    "8": 27
+  },
+  "images_with_at_least_4_valid": 30,
+  "p_at_least_4_valid": 1.0,
+  "mean_valid_exact": 7.7,
+  "raw_exact": 214,
+  "bch_exact": 231,
+  "valid_exact": 231,
+  "erased": 8,
+  "silent_wrong": 1,
+  "silent_wrong_rate": 0.004166666666666667,
+  "unmatched_accepted_clusters": 0,
+  "mean_clusters": 8.033333333333333,
+  "mean_psnr": 41.00513535624891,
+  "mean_ssim": 0.9798354645570119,
+  "mean_embed_seconds": 1.1977997319307179,
+  "mean_detect_seconds": 2.1827412388374796,
+  "mean_packet_decode_seconds": 3.4409611059042316e-05,
+  "bch_status_counts": {
+    "valid": 233,
+    "missing": 2,
+    "uncorrectable_syndrome": 5
+  },
+  "crc_status_counts": {
+    "accepted": 232,
+    "missing": 2,
+    "bch_uncorrectable_syndrome": 5,
+    "crc_reject": 1
+  },
+  "gate": {
+    "p_at_least_4_ge_99pct": true,
+    "mean_valid_ge_7": true,
+    "silent_wrong_le_0p5pct": true,
+    "mean_psnr_ge_40db": true,
+    "mean_ssim_ge_0p97": true,
+    "no_accepted_unmatched_clusters": true,
+    "pass": true
+  }
+}

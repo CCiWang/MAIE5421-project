@@ -1,0 +1,69 @@
+{
+  "subsets": 70,
+  "test_sources": 259,
+  "recoveries": 18130,
+  "every_four_row_subset_invertible": true,
+  "all_exact": true,
+  "gf_primitive_polynomial_hex": "0x11d",
+  "matrix_rows": [
+    [
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      2,
+      4,
+      8
+    ],
+    [
+      1,
+      3,
+      5,
+      15
+    ],
+    [
+      1,
+      4,
+      16,
+      64
+    ],
+    [
+      1,
+      5,
+      17,
+      85
+    ],
+    [
+      1,
+      6,
+      20,
+      120
+    ],
+    [
+      1,
+      7,
+      21,
+      107
+    ],
+    [
+      1,
+      8,
+      64,
+      58
+    ]
+  ],
+  "repetition_source_by_region": [
+    0,
+    1,
+    2,
+    3,
+    3,
+    2,
+    1,
+    0
+  ],
+  "conflict_and_missing_packet_tests": "passed"
+}
